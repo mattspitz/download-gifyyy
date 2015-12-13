@@ -4,7 +4,6 @@ Those Gifyyy URLs are pretty obvious. `/img123` can only suggest that there's an
 
 Since Gifyyy uses MeteorJS to fetch image URLs, we use PhantomJS to render the page and scoop the URL, which is slow.
 
-Fortunately, this is easily parallelizable!
+Fortunately, this is easily parallelizable! Assuming [GNU Parallel](http://www.gnu.org/software/parallel/):
 
-Assuming [GNU Parallel](http://www.gnu.org/software/parallel/)
 `seq 1 1000 | parallel -j8 python --dest gifs/ --index {} <YourGalleryName>`
