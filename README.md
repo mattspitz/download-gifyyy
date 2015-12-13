@@ -1,8 +1,8 @@
 # download-gifyyy
 
-Those Gifyyy URLs are pretty obvious. `/img123` can only suggest that there's an `/img122` and an `/img/124`, right? Well, who needs security by obscurity?  It's not clear whether all GIFs or just those that are sent are included.
+Those Gifyyy URLs are pretty obvious. `/img123` can only suggest that there's an `/img122` and an `/img/124`, right? Well, who needs security by obscurity?  It's not clear whether all GIFs or just those that are sent can be downloaded.
 
-Since Gifyyy uses MeteorJS to fetch image URLs, we use PhantomJS to render the page and scoop the URL.
+Since Gifyyy uses MeteorJS to fetch image URLs, we use PhantomJS to render the page and scoop the URL, which is slow.
 
 Fortunately, this is easily parallelizable!
 
