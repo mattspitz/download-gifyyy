@@ -7,7 +7,7 @@ if (system.args.length != 2) {
 
 var page = require("webpage").create();
 page.onResourceRequested = function(request) {
-    if (request.url.match(/\/cfs\/files\/images/)) {
+    if (request.url.match(/\/gifs\/images/)) {
         console.log("url="+request.url);
 
         // Are you serious? https://github.com/ariya/phantomjs/issues/11306
